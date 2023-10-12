@@ -1,0 +1,135 @@
+:root {
+  --primary-color: #B00020;
+  --secondary-color: #ff9706;
+  --accent-color: #008209;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.header .logo img {
+  margin-top: -8px;
+  max-width: 30px;
+  border-radius: 10px;
+  border: 2px solid white;
+  float: left;
+}
+.header .navigation ul {
+  list-style: none;
+  padding: 0;
+}
+.header .navigation ul li {
+  display: inline;
+  margin-right: 20px;
+}
+.header .navigation ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: calculateFontSize(18rem);
+  transition: transform 0.2s ease;
+}
+.header .navigation ul li a:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+.pricing .button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.introduction {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 50px;
+}
+.introduction h1 {
+  font-size: 2.25;
+  margin-bottom: 20px;
+}
+.introduction p {
+  font-size: 1.125;
+}
+
+.services {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  display: grid;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.services .service {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+}
+.services .service h3 {
+  font-size: 1.5;
+  margin-bottom: 10px;
+}
+.services .service p {
+  font-size: 1;
+  color: #555;
+}
+
+.pricing {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  display: grid;
+  grid-auto-rows: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.pricing .button {
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.614);
+  float: right;
+}
+.pricing .plan {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+}
+.pricing .plan h3 {
+  float: left;
+  font-size: 1.5;
+  margin-bottom: 10px;
+}
+.pricing .plan p {
+  margin-top: 20px;
+  margin-left: 10px;
+  float: left;
+  font-size: 0.625;
+  color: var(--accent-color);
+}
+
+/*# sourceMappingURL=home.css.map */

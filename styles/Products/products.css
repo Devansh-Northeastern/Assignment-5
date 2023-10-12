@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #B00020;
+  --secondary-color: #ff9706;
+  --accent-color: #008209;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.header .logo img {
+  margin-top: -8px;
+  max-width: 30px;
+  border-radius: 10px;
+  border: 2px solid white;
+  float: left;
+}
+.header .navigation ul {
+  list-style: none;
+  padding: 0;
+}
+.header .navigation ul li {
+  display: inline;
+  margin-right: 20px;
+}
+.header .navigation ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: calculateFontSize(18rem);
+  transition: transform 0.2s ease;
+}
+.header .navigation ul li a:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+.products {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.products .product {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  flex: 0 0 calc(22% - 20px);
+}
+.products .product img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+.products .product h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.products .product p {
+  font-size: 24px;
+  color: #555;
+}
+
+.team {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.team .team-member {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  flex: 0 0 calc(30% - 20px);
+}
+.team .team-member img {
+  margin-right: 20px;
+  float: left;
+  max-width: 200px;
+  height: 100px;
+  border-radius: 30px;
+  object-fit: 25%;
+  object-position: 25%;
+}
+.team .team-member h3 {
+  font-size: 24px;
+  margin-bottom: -15px;
+}
+.team .team-member p {
+  font-size: 16px;
+  color: #555;
+}
+
+/*# sourceMappingURL=products.css.map */
